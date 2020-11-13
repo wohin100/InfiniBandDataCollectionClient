@@ -20,7 +20,7 @@ public class InfiniBandDataCollectionClient {
 
         Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
-        Client client = new Client(hostName, port, 500, logger);
+        //Client client = new Client(hostName, port, 500, logger);
 
         //JSONObject reader = Json.createReader(new StringReader(personJSONData));
         JSONObject jobj = new JSONObject();
@@ -30,10 +30,13 @@ public class InfiniBandDataCollectionClient {
         jobj.put("istklug", true);
         String jsonString = jobj.toString();
 
-        try {
-            client.sendInfinibandDataToServer(jsonString);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        InfiniBandDetector infiniBandDetector = new InfiniBandDetector();
+        infiniBandDetector.collectInfos();
+
+        //try {
+          //  client.sendInfinibandDataToServer(jsonString);
+        //} catch (Exception e) {
+          //  e.printStackTrace();
+        //}
     }
 }
