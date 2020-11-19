@@ -30,6 +30,7 @@ public class InfiniBandDataCollectionClient {
         jobj.put("istklug", true);
         String jsonString = jobj.toString();
 
+        System.out.println("Test");
         InfiniBandDetector infiniBandDetector = new InfiniBandDetector();
         infiniBandDetector.collectInfos();
 

@@ -8,7 +8,7 @@ version '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
     maven {
-        url 'https://oss.jfrog.org/artifactory/oss-snapshot-local'
+        url "https://dl.bintray.com/hhu-bsinfo/dxram"
     }
 }
 
@@ -19,5 +19,5 @@ dependencies {
     compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
     // https://mvnrepository.com/artifact/org.json/json
     compile group: 'org.json', name: 'json', version: '20200518'
-    implementation 'de.hhu.bsinfo:jdetector:0.1.0-SNAPSHOT'
+    implementation 'de.hhu.bsinfo:jdetector:0.1.0'
 }
