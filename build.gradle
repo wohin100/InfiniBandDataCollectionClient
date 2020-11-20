@@ -1,5 +1,5 @@
 plugins {
-    id 'java'
+    id 'application'
 }
 
 group 'de.hhu'
@@ -10,6 +10,15 @@ repositories {
     maven {
         url "https://dl.bintray.com/hhu-bsinfo/dxram"
     }
+}
+
+apply plugin : "java"
+ext {
+    javaMainClass = "de.hhu.InfiniBandDataCollectionClient"
+}
+
+application {
+    mainClassName = "de.hhu.InfiniBandDataCollectionClient"
 }
 
 dependencies {

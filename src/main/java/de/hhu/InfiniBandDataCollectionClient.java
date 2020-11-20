@@ -1,5 +1,7 @@
+package de.hhu;
+
 import org.json.simple.JSONObject;
-import java.io.StringReader;
+
 import java.util.logging.Logger;
 
 public class InfiniBandDataCollectionClient {
@@ -20,7 +22,7 @@ public class InfiniBandDataCollectionClient {
 
         Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
-        //Client client = new Client(hostName, port, 500, logger);
+        //de.hhu.Client client = new de.hhu.Client(hostName, port, 500, logger);
 
         //JSONObject reader = Json.createReader(new StringReader(personJSONData));
         JSONObject jobj = new JSONObject();

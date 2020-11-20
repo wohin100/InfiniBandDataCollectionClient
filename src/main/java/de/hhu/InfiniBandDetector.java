@@ -1,3 +1,5 @@
+package de.hhu;
+
 import de.hhu.bsinfo.jdetector.lib.IbFabric;
 import de.hhu.bsinfo.jdetector.lib.IbNode;
 import de.hhu.bsinfo.jdetector.lib.IbPort;
